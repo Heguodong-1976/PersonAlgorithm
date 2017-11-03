@@ -6,6 +6,6 @@ C#
 # Compiler
 VS2017
 # Platform
-.Net framework 4.5(above)
+.Net framework 4.5(or above)
 
 
