@@ -1,11 +1,11 @@
 # PersonAlgorithm
 Some algorithms I have used
 
-#Language
+# Language
 C#
-#Compiler
+# Compiler
 VS2017
-#Platform
+# Platform
 .Net framework 4.5(above)
 
 
