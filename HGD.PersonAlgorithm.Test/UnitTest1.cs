@@ -9,7 +9,7 @@ namespace HGD.PersonAlgorithm.Test
         [TestMethod]
         public void TestMethod1()
         {
-            var i = Splitter.Hello();
+            //var i = Splitter.Hello();
         }
     }
 }
