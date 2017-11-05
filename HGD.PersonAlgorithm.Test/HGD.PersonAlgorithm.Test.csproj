@@ -49,8 +49,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Collection\To_Test.cs" />
-    <Compile Include="UnitTest1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Splitter\To_n_Parts_Test.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

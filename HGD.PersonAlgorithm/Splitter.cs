@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace HGD.PersonAlgorithm
 {
-    public class Splitter
+    public static class Splitter
     {
         /// <summary>
         /// Split collection to n
@@ -14,9 +14,17 @@ namespace HGD.PersonAlgorithm
         /// <param name="collection">Spliting collection</param>
         /// <param name="n">Splitting count</param>
         /// <returns>n array with same length</returns>
-        public static IEnumerable<T[]> To_n_Parts<T>(IEnumerable<T> collection,Int32 n)
+        public static T[][] To_n_Parts<T>(this IEnumerable<T> collection,Int32 n)
         {
-            throw new NotImplementedException();
+            if (collection == null) return null;
+            if (collection.Count() % n != 0) return null;
+            var len = collection.Count() / n;
+            return 0.To(n).Select(i => PeekArray(collection, i, len)).ToArray();
+        }
+
+        private static T[] PeekArray<T>(IEnumerable<T> collection, int i, int len)
+        {
+            return 0.To(len).Select(j => collection.ElementAt(i * len + j)).ToArray();
         }
     }
 }
